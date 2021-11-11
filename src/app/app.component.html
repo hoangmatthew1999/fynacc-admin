@@ -50,6 +50,17 @@
   .toolbar img {
     margin: 0 16px;
   }
+  ul {/*the nav bar*/
+    vertical-align: middle;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  height: 100%; /* Full height */
+  position: fixed; /* Make it stick, even on scroll */
+  overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
 
   .toolbar #twitter-logo {
     height: 40px;
@@ -303,9 +314,13 @@
 </style>
 
 <!-- Toolbar -->
-<div class="toolbar" role="banner">
-  <h1>hello</h1>
-</div>
+
+<ul>
+  <li><a href="addUser">Add User</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a class="active" href="#about">About</a></li>
+</ul> 
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
